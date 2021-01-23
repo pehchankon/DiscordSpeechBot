@@ -300,16 +300,16 @@ discordClient.on('message', async (msg) => {
 function getHelpString() {
     let out = '**VOICE COMMANDS:**\n'
         out += '```'
-        out += 'aqua help\n'
-        out += 'aqua play [random, favorites, <genre> or query]\n'
-        out += 'aqua skip\n'
-        out += 'aqua pause/resume\n'
-        out += 'aqua shuffle\n'
-        out += 'aqua genres\n'
-        out += 'aqua set favorite\n'
-        out += 'aqua favorites\n'
-        out += 'aqua list\n'
-        out += 'aqua clear list\n';
+        out += 'music help\n'
+        out += 'music play [random, favorites, <genre> or query]\n'
+        out += 'music skip\n'
+        out += 'music pause/resume\n'
+        out += 'music shuffle\n'
+        out += 'music genres\n'
+        out += 'music set favorite\n'
+        out += 'music favorites\n'
+        out += 'music list\n'
+        out += 'music clear list\n';
         out += '```'
 
         out += '**TEXT COMMANDS:**\n'
@@ -436,7 +436,7 @@ function process_commands_query(query, mapKey, userid) {
 
     let out = null;
 
-    const regex = /^acqua ([a-zA-Z]+)(.+?)?$/;
+    const regex = /^music ([a-zA-Z]+)(.+?)?$/;
     const m = query.match(regex);
     if (m && m.length) {
         const cmd = (m[1]||'').trim();

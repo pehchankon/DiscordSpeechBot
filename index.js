@@ -190,7 +190,7 @@ discordClient.on('ready', () => {
 })
 discordClient.login(DISCORD_TOK)
 
-const PREFIX = '!';
+const PREFIX = '$';
 const _CMD_HELP        = PREFIX + 'help';
 const _CMD_JOIN        = PREFIX + 'join';
 const _CMD_LEAVE       = PREFIX + 'leave';
@@ -300,16 +300,16 @@ discordClient.on('message', async (msg) => {
 function getHelpString() {
     let out = '**VOICE COMMANDS:**\n'
         out += '```'
-        out += 'music help\n'
-        out += 'music play [random, favorites, <genre> or query]\n'
-        out += 'music skip\n'
-        out += 'music pause/resume\n'
-        out += 'music shuffle\n'
-        out += 'music genres\n'
-        out += 'music set favorite\n'
-        out += 'music favorites\n'
-        out += 'music list\n'
-        out += 'music clear list\n';
+        out += 'aqua help\n'
+        out += 'aqua play [random, favorites, <genre> or query]\n'
+        out += 'aqua skip\n'
+        out += 'aqua pause/resume\n'
+        out += 'aqua shuffle\n'
+        out += 'aqua genres\n'
+        out += 'aqua set favorite\n'
+        out += 'aqua favorites\n'
+        out += 'aqua list\n'
+        out += 'aqua clear list\n';
         out += '```'
 
         out += '**TEXT COMMANDS:**\n'
